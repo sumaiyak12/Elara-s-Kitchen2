@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plates - Elara's Kitchen</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f5;
+        }
+
+        header {
+            background-color: #804E74;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px 0;
+            color: #804E74;
+        }
+
+        .plates-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto 50px auto;
+            padding: 0 20px;
+        }
+
+        .plate-card {
+            background-color: #fff2ee;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .plate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .plate-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .plate-card h3 {
+            margin: 15px 0 10px 0;
+            color: #804E74;
+        }
+
+        .plate-card p {
+            padding: 0 15px 15px 15px;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #804E74;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>Elara's Kitchen</header>
+
+    <h2>Our Plates</h2>
+
+    <div class="plates-container">
+        <div class="plate-card">
+            <img src="biryani.jpg" alt="Biryani">
+            <h3>Biryani</h3>
+            <p>Aromatic and flavorful rice dish with perfectly spiced meat or vegetables.</p>
+        </div>
+
+        <div class="plate-card">
+            <img src="seakhKebabs.jpg" alt="Seekh Kebab">
+            <h3>Seekh Kebab</h3>
+            <p>Juicy grilled chicken skewers marinated with spices and herbs.</p>
+        </div>
+
+        <div class="plate-card">
+            <img src="paneerButterMasala.jpg" alt="Paneer Butter Masala">
+            <h3>Paneer Butter Masala</h3>
+            <p>Soft paneer cubes in a rich and creamy tomato-based gravy.</p>
+        </div>
+
+        <div class="plate-card">
+            <img src="hakkaNooddles.jpg" alt="Hakka Noodles">
+            <h3>Hakka Noodles</h3>
+            <p>Stir-fried noodles tossed with fresh vegetables and flavorful sauces.</p>
+        </div>
+
+        <div class="plate-card">
+            <img src="pizza.jpg" alt="Margherita Pizza">
+            <h3>Margherita Pizza</h3>
+            <p>Classic pizza topped with tomato, mozzarella, and fresh basil.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Elara's Kitchen. All Rights Reserved.
+    </footer>
+</body>
+</html>
